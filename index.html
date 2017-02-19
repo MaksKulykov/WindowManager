@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw13</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/main.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3" id="menu">
+            <fieldset>
+                <legend><h4>Задайте параметры окна</h4></legend>
+                <h4>Тип стеклопакета</h4>
+                <select class="form-control" id="igunitType" title="Выберите тип стеклопакета" autocomplete="off">
+                    <option value="0">Выберите тип стеклопакета</option>
+                    <option value="1">Однокамерный</option>
+                    <option value="2">Двухкамерный</option>
+                </select>
+                <br>
+                <br>
+                <h4>Цвет окна</h4>
+                <select class="form-control" id="windowColor" title="Выберите цвет окна" autocomplete="off">
+                    <option value="0">Выберите цвет окна</option>
+                    <option value="1">Белый</option>
+                    <option value="2">Под дерево</option>
+                    <option value="3">Другой</option>
+                </select>
+                <br>
+                <br>
+                <div id="yourColor">
+                    <h4>Укажите Ваш цвет</h4>
+                    <input type="text" id="changeColor" class="input-sm" name="color" placeholder="Введите цвет">
+                </div>
+            </fieldset>
+        </div>
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="http://oknaplus.kiev.ua/wp-content/themes/okna2014/img2/prev1.jpg" id="image1" height="150px" width="auto">
+                </div>
+                <div class="col-lg-3">
+                    <img src="http://oknaplus.kiev.ua/wp-content/themes/okna2014/img2/prev2.jpg" id="image2" height="150px" width="auto">
+                </div>
+                <div class="col-lg-3">
+                    <img src="http://oknaplus.kiev.ua/wp-content/themes/okna2014/img2/prev3.jpg" id="image3" height="150px" width="auto">
+                </div>
+            </div>
+            <div class="row">
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="radio-inline">
+                        <input type="radio" name="options" id="view1" autocomplete="off">
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="options" id="view2" autocomplete="off">
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="options" id="view3" autocomplete="off">
+                    </label>
+                </div>
+            </div>
+            <div class="row" style="height: 20px;"></div>
+            <div class="row">
+                <div class="col-lg-3" id="size">
+                    <h4>Высота (см)</h4>
+                    <input type="text" id="inputHeight" class="input-sm" name="height" placeholder="Введите высоту окна">
+                    <h4>Ширина (см)</h4>
+                    <input type="text" id="inputWidth" class="input-sm" name="width" placeholder="Введите ширину окна">
+                </div>
+                <div class="col-lg-6">
+                    <img src="http://oknaplus.kiev.ua/wp-content/themes/okna2014/img2/prev1.jpg" id="picture1" height="300px" width="auto">
+                </div>
+                <div class="col-lg-6">
+                    <img src="http://oknaplus.kiev.ua/wp-content/themes/okna2014/img2/prev2.jpg" id="picture2" height="300px" width="auto">
+                </div>
+                <div class="col-lg-6">
+                    <img src="http://oknaplus.kiev.ua/wp-content/themes/okna2014/img2/prev3.jpg" id="picture3" height="300px" width="auto">
+                </div>
+            </div>
+            <div class="row" style="height: 20px"></div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <button type="button" class="btn btn-default" id="btn"><b>Рассчитать</b></button>
+                </div>
+                <form id="rotation">
+                    <div class="col-lg-2">
+                        <select class="input-sm" name="rot" id="choice1" autocomplete="off" title="Выберите вид створки">
+                            <option value="0">Вид</option>
+                            <option value="1">Глухая</option>
+                            <option value="2">Поворотная</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2">
+                        <select class="input-sm" name="rot" id="choice2" autocomplete="off" title="Выберите вид створки">
+                            <option value="0">Вид</option>
+                            <option value="1">Глухая</option>
+                            <option value="2">Поворотная</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2">
+                        <select class="input-sm" name="rot" id="choice3" autocomplete="off" title="Выберите вид створки">
+                            <option value="0">Вид</option>
+                            <option value="1">Глухая</option>
+                            <option value="2">Поворотная</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="row" style="height: 20px"></div>
+            <div class="row-form">
+                <p class="bg-danger validation-msg" id="error" style="height: 30px">Введены не все данные для расчета. Пожалуйста, заполните все позиции.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6" id="result"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="jquery-3.1.1.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="src/js/main.js"></script>
+</body>
+</html>

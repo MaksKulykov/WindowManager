@@ -1,0 +1,59 @@
+.container {
+    margin-top: 50px;
+}
+
+#view1 {
+    margin-left: 75px;
+}
+
+#view2 {
+    margin-left: 260px;
+}
+
+#view3 {
+    margin-left: 455px;
+}
+
+#image1 {
+    margin-left: 53px;
+}
+
+#image2 {
+    margin-left: 20px;
+}
+
+fieldset {
+    padding: 0 10px 100px 10px;
+    border: 1px solid grey;
+}
+
+#size {
+    padding-top: 60px;
+}
+
+#choice1 {
+    margin-left: 37px;
+}
+
+#choice2 {
+    margin-left: 20px;
+}
+
+#picture1, #picture2, #picture3 {
+    margin-left: 30px;
+}
+
+#picture1, #picture2, #picture3, #choice1, #choice2, #choice3, #yourColor, #error {
+    display: none;
+}
+
+#error {
+    text-align: center;
+}
+
+
+
+#btn {
+    color: white;
+    background-color: #5bc0de;
+}
