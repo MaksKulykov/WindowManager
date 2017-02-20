@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+let gulp = require('gulp'),
 	babel = require('gulp-babel'),
 	autoprefixer = require('gulp-autoprefixer'),
  //   uglify = require('gulp-uglify'),
